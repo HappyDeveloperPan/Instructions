@@ -2,15 +2,76 @@
 Important changes to Instructions will be documented in this file.
 Instructions follows [Semantic Versioning](http://semver.org/).
 
-## X.X.X
-Released on 2018-XX-XX.
+## [1.3.1](https://github.com/ephread/Instructions/releases/tag/1.3.1)
+Released on 2019-05-04.
 
-### Changed
-- Migrated to Swift 4
+### Fixed
+- Fix [#204] - `spec.swift_version` set to 5 instead of 5.0
+
+[#204]: https://github.com/ephread/Instructions/issues/204
+
+## [1.3.0](https://github.com/ephread/Instructions/releases/tag/1.3.0)
+Released on 2019-04-11.
+
+### Fixed
+- Fix [#187] - Wrong index reported by `didHide`
 
 ### Added
-- Proper support for iPhone X
+- Add previous coach mark functionality ([#182])
 
+### Changed
+- Migrated to Swift 5
+
+[#182]: https://github.com/ephread/Instructions/issues/182
+[#187]: https://github.com/ephread/Instructions/issues/187
+
+## [1.2.2](https://github.com/ephread/Instructions/releases/tag/1.2.2)
+Released on 2018-12-06.
+
+## [1.2.1](https://github.com/ephread/Instructions/releases/tag/1.2.1)
+Released on 2018-12-05. ⚠️ Defective version
+
+### Fixed
+- Fix [#160] - CoachMark misplaced on iPad
+
+### Added
+- Add support for coach marks placed over cutout paths. ([#152])
+- Add support for presentation contexts. ([#84])
+- Add support for animated coach marks.
+
+### Changed
+- Change willSHow and didShow coachmark delegate methods to discrimate between
+  different configuration changes.
+
+[#84]: https://github.com/ephread/Instructions/issues/84
+[#152]: https://github.com/ephread/Instructions/issues/152
+[#160]: https://github.com/ephread/Instructions/issues/160
+
+## [1.2.0](https://github.com/ephread/Instructions/releases/tag/1.2.0)
+Released on 2018-06-04.
+
+### Changed
+- Migrated to Swift 4.1 (PR [#159])
+
+### Fixed
+- Fix [#163] - Silly weak modifier in protocol property.
+- Fix [#166] - `UIApplication.networkActivityIndicatorVisible` called from background queue.
+- Fix [#90] - Crash occuring infrequently if the view controller is dismissed too quickly. (PR [#161])
+
+### Added
+- Add supports for ornaments on the overlay.
+- Add (partially implemented by [#131]).
+- Add status bar style customization (PR [#164], PR [#139]).
+- Add proper support for iPhone X.
+
+[#90]: https://github.com/ephread/Instructions/issues/90
+[#131]: https://github.com/ephread/Instructions/pull/131
+[#139]: https://github.com/ephread/Instructions/pull/139
+[#159]: https://github.com/ephread/Instructions/pull/159
+[#161]: https://github.com/ephread/Instructions/pull/161
+[#163]: https://github.com/ephread/Instructions/issues/163
+[#164]: https://github.com/ephread/Instructions/pull/164
+[#166]: https://github.com/ephread/Instructions/issues/166
 
 ## [1.1.0](https://github.com/ephread/Instructions/releases/tag/1.1.0)
 Released on 2017-08-09.
@@ -20,6 +81,10 @@ Released on 2017-08-09.
 
 ### Fixed
 - Fix [#127] & [#132] by retrieve configuration from parent controller.
+
+[#100]: https://github.com/ephread/Instructions/issues/100
+[#127]: https://github.com/ephread/Instructions/issues/127
+[#132]: https://github.com/ephread/Instructions/issues/132
 
 ## [1.0.0](https://github.com/ephread/Instructions/releases/tag/1.0.0)
 Released on 2017-07-05.
